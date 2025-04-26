@@ -34,16 +34,23 @@
     </div>
   </div>
 
+  <!-- Welcome text in its own box -->
   <div class="content">
     <p id="text">
       Welcome to LumaText, your AI-powered tool to make reading easier, clearer, and more accessible for everyone!
     </p>
-  <div class="upload-section">
-    <label for="fileUpload" class="upload-label">Upload a File:</label><br>
-    <input type="file" id="fileUpload" class="upload-input">
   </div>
-</div>
 
+  <!-- Upload section in a different box -->
+  <div class="content upload-container">
+    <form id="uploadForm">
+      <label for="fileUpload" class="upload-label">Upload a File:</label>
+      <div class="upload-box">
+        <input type="file" id="fileUpload" class="upload-input">
+        <button type="submit" class="upload-button">Submit</button>
+      </div>
+    </form>
+  </div>
 
   <!-- Link to external JS -->
   <script src="luma.js"></script>

@@ -92,29 +92,57 @@
   body.dark-mode .content {
     background: #1f1f1f;
   }
-
-  .upload-section {
+  .upload-container {
     margin-top: 2rem;
-    text-align: center;
   }
   
   .upload-label {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    color: #5b6eff;
+    margin-bottom: 1rem;
     display: block;
+    text-align: center;
+  }
+  
+  .upload-box {
+    background: #f0f4ff;
+    border: 2px dashed #5b6eff;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: 0.3s;
+  }
+  
+  .upload-box:hover {
+    background: #e8edff;
+    border-color: #a46bff;
   }
   
   .upload-input {
-    padding: 0.7rem;
-    border: 2px solid #5b6eff;
-    border-radius: 8px;
-    background-color: #f0f0ff;
-    cursor: pointer;
     font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
   }
   
-  .upload-input:hover {
-    background-color: #e0e0ff;
+  .upload-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #5b6eff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .upload-button:hover {
+    background-color: #7c83ff;
   }
   
