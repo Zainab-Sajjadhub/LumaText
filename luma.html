@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LumaText</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="luma.css">
+</head>
+
+<body>
+
+  <div class="logo">LumaText</div>
+
+  <img src="https://i.pinimg.com/736x/b8/1b/90/b81b90dee93519880e3b348d97ff78c2.jpg" alt="Decorative Image" class="header-image">
+
+  <div class="settings-banner">
+    <div class="settings">
+      <label for="fontSize">Font Size:</label>
+      <input type="range" id="fontSize" min="12" max="36" value="16" onchange="changeFontSize()">
+
+      <label for="fontFamily">Font Family:</label>
+      <select id="fontFamily" onchange="changeFontFamily()">
+        <option value="Arial, sans-serif">Arial</option>
+        <option value="Verdana, sans-serif">Verdana</option>
+        <option value="Tahoma, sans-serif">Tahoma</option>
+        <option value="'Times New Roman', serif">Times New Roman</option>
+      </select>
+
+      <button onclick="readText()">🔊 Audio</button>
+
+      <button onclick="toggleDarkMode()">🌙/☀️ Dark/Light Mode</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <p id="text">
+      Welcome to LumaText, your AI-powered tool to make reading easier, clearer, and more accessible for everyone!
+    </p>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="luma.js"></script>
+</body>
+</html>
